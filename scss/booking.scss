@@ -1,0 +1,105 @@
+.booking {
+    width: 830px;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+
+    .container {
+        width: 830px;
+        max-width: 1920px;
+        //background-color: green;
+        
+
+        .title {
+            h1 {
+                font-size: 60px;
+                font-family: sans-serif;
+            }
+        }
+
+        form {
+            background-color: white;
+            height: 100%;
+            justify-content: center;
+            font-family: sans-serif;
+            
+
+            .text-row {
+                display: flex;
+            }
+
+            input {
+                height: 58px;
+                border: 2px solid #79ADDC;
+                padding: 10px;
+                margin: 21px;
+            }
+
+            #name,#country {
+                width: 344px;
+            }
+
+            #email,#hotel {
+                width: 453px;
+            }
+
+            #check-in,#check-out {
+                width: 698px;
+            }
+
+            select {
+                height: 58px;
+                border: 2px solid #79ADDC;
+                padding: 10px;
+                width: 103px;
+                margin: 21px;
+            }
+
+            .group {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+            }
+
+            textarea {
+                height: 192px;
+                border: 2px solid #79ADDC;
+                width: 830px;
+                margin-bottom: -100px;
+            }
+
+            .learn-more {
+                a {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 120px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .booking {
+        .container {
+            form {
+                #name,#country {
+                    width: 600px;
+                }
+                    
+                #email,#hotel {
+                    width: 600px;
+                }
+            }
+        }
+    }
+    .text-row {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+}

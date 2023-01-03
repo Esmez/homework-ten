@@ -1,0 +1,92 @@
+.blog-info {
+    width: 980px;
+    //background-color: red;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .box {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        background-color: #79addc;
+        margin-top: -1px;
+        
+        .date {
+            color: white;
+            font-size: 22px;
+            font-family: fantasy;
+        }
+    
+        .month {
+            color: white;
+            font-size: 12px;
+            font-family: 'Franklin Gothic Medium';
+        }
+    }
+
+    .group {
+        width: 900px;
+        height: 376px;
+        
+        .images {
+            overflow: hidden;
+            width: 900px;
+            height: 259px;
+            img {
+                width: 100%;
+            }
+        }
+
+        .top {
+            text-align: left;
+            margin-top: 11px;
+            p {
+                width: 380px;
+                height: 64px;
+                font-size: 13px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #79addc;
+            }
+        }
+    }
+
+    
+}
+
+@media only screen and (max-width:990px) {
+    h5{ 
+        margin-top: -30px;
+    }
+    .wrapper {
+        align-items: center;
+        width: 600px;
+        height: 850px;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width:990px) {
+    .blog-info {
+        align-items: center;
+        display: block;
+        width: 300px;
+        margin-top: -10px;
+
+        .box {
+
+        }
+
+        .group {
+            margin-top: 5px;
+            .images{
+                img {
+                    width: 300px
+                }
+            }
+
+            .top {
+                margin-top: -5px;
+            }
+        }
+    }
+}

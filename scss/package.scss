@@ -1,0 +1,113 @@
+.pictures{
+    max-width: 981px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+    padding: 10px;
+    
+    .holder3 {
+        position: relative;
+        width: 298px;
+        height: 347px;
+        //background-color: red;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+}
+
+@media only screen and (max-width:600px){
+    .pictures{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+        .holder3{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.info {
+    height: 776px;
+    width: 100%;
+    //display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    .info-container {
+        max-width: 980px;
+        margin: 0 auto;
+
+        .title{
+            width: 235px;
+            h1{
+                font-size: 60px;
+                font-family: Helvetica;
+                border-bottom: 2px solid black;
+            }
+        }
+        
+        .text {
+            width: 980px;
+            p {
+                font-size: 16px;
+                font-family: 'Lucida Sans Unicode';
+                margin-top: 30px;
+                margin-bottom: 70px;
+                padding: 10px;
+            }
+        }   
+    }
+
+    .bookNow {
+        width: 133px;
+        background-color: #79addc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        border-radius: 15px;
+    
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+            padding: 8px 8px;
+            
+        }
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .info{
+        .info-container {
+            align-items: center;
+            justify-content: center;
+            width: 600px;
+        }
+        .title {
+            margin: 0 auto;
+            margin-top: 80px;
+            width: 300px;
+            align-items: center;
+            justify-content: center;
+        }
+        .text {
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: left;
+            font-size: 25px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+footer {
+    height: 100px;
+    background-color: #79ADDC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 220px;
+
+    .logo {
+        width: 800px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copyright {
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .sm {
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+}

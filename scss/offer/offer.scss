@@ -1,0 +1,137 @@
+.title3 {
+    margin: 0 auto;
+    width: 979px;
+    //background-color: yellow;
+    
+    .line {
+        width: 102px;
+        border-bottom: 2px solid black ;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}
+
+.offer {
+    width: 979px;
+    height: 700px;
+    //background-color: blue;
+
+    .info-special {
+        //background-color: green;
+        display: flex;
+        align-items: center;
+        width: 979px;
+        height: 350px;
+        position: relative;
+
+        .photos {
+            display: flex;
+            //padding: 20px;
+            width: 199px;
+            height: 287px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .offers {
+            width: 250px;
+            margin-bottom: 50px;
+            padding: 20px;
+
+            .both {
+                width: 300px;
+                justify-content: space-between;
+                .line {
+                    width: 196px;
+                    border-bottom: 2px solid black ;
+                }
+
+                .discount {
+                    color: red;
+                    font-size: 20px;
+                    align-items: center;
+                }
+            }
+            p {
+                text-align: left;
+                width: 210px;
+                font-size: 16px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+
+        .learnMore {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-top: 50px;
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 8px 8px;
+                background-color: #79addc;
+                border-radius: 15px;
+                font-size: 15px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .title3 {
+        align-items: center;
+        width: 600px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .wrapper-so {
+        align-items: center;
+        width: 600px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:560px) {
+    .offer {
+        width: 600px;
+        .info-special {
+            align-items: center;
+        } 
+    }
+}
+
+@media only screen and (max-width:560px) {
+
+    .offers {
+        align-items: center;
+        justify-content: center;
+        h1{
+            width: 100px;
+        }
+            
+        .both{
+            flex-direction: column;
+            width: 100px;
+            .line {
+                width: 20px;
+            }
+            .discount{
+                h4{
+                  text-align: left;  
+                }
+            }
+        }
+        p {
+            width: 30px;
+            text-align: left;
+            justify-content: left;
+            
+        }
+    }
+}

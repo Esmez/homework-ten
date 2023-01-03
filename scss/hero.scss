@@ -1,0 +1,149 @@
+.hero {
+    height: 500px;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    
+    img {
+        position: absolute;
+        width: 100%;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .container {
+        max-width: 714px;
+        height: 160px;
+        margin-top: 250px;
+        height: 60%;
+
+        h1 {
+            font-size: 60px;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        em {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+    }
+}
+
+.hero2 {
+    height: 200px;
+    width: 981px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 49px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    img {
+        width: 100%;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5)
+    }
+
+    .container2 {
+        height: 80px;
+        max-width: 226px;
+
+        h1 {
+            text-transform: uppercase;
+            color: white;
+            font-size: 60px;
+            font-family: 'Arial Narrow';
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero2 {
+        width: 550px;
+
+    }
+}
+.hero3 {
+    max-width: 981px;
+    height: 413px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+    margin-top: 48px;
+    position: relative;
+    img{
+        width: 100%;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        //display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5
+        );
+    }
+
+    .container {
+        height: 106px;
+        max-width: 687;
+        margin-bottom: 289px;
+        margin-left: 30px;
+        
+        
+        h1 {
+            color: white;
+            font-size: 80px;
+            font-family:  'Arial Narrow';
+            
+        }
+    }
+
+    .price {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: white;
+        font-size: 30px;
+        font-family:'Arial Narrow' ;
+        
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .hero3{
+        width: 500px;
+    }
+}

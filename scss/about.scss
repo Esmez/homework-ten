@@ -1,0 +1,132 @@
+.about {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    
+    .container {
+        width: 980px;
+        height: 364px;
+        margin-top: 300px;
+        padding: 30px;
+        //background-color: pink;
+        
+        
+    
+        .title2 {
+            width: 345px;
+            justify-content: center;
+            
+
+            h1 { 
+                font-size: 60px;
+                text-align: left;
+                font-family: Arial ;
+                text-transform: uppercase;
+                border-bottom: 2px solid black;
+            }
+
+            h2 { 
+                font-size: 40px;
+                text-align: left;
+                font-family: Arial ;
+                text-transform: uppercase;
+                border-bottom: 2px solid black;
+                margin-top: 100px;
+                
+            }
+            
+        }
+
+        .text {
+            width: 980px;
+            height: 96px;
+            justify-content: center;
+
+            p{
+                font-size: 16px;
+                font-family:sans-serif;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .about {
+        .container {
+            align-items: center;
+            justify-content: center;
+            width: 600px;
+        }
+        .text {
+            align-items: center;
+            justify-content: space-evenly;
+            width: 300px;
+            display: block;
+            p {
+                width: 300px;
+            }
+        }
+    }
+}
+
+.wrapper2 {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin-top: 200px;
+    
+
+    .aboutPerson {
+        max-width: 676px;
+        min-height: 150px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 30px;
+
+
+        .personImage {
+            width: 250px;
+            height: 150px;
+            img {
+                width: 100%;
+            }
+        }
+
+        .about-client {
+            width: 385px;
+            p {
+                font-size: 16px;
+                font-family: cursive;
+            }
+        }
+
+        .author {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: #79ADDC;
+        }
+    }
+}
+
+@media only screen and (max-width: 744px) {
+    .aboutPerson {
+        flex-direction: column;
+        padding-bottom: 20px;
+        .personImage {
+            display: block;
+            margin-bottom: 20px;
+        }
+        .about-client {
+            display: block;
+        }
+    }
+}
